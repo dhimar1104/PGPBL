@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>PGPBL</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list color="success">
+    <ion-item color="success">
+      <ion-avatar slot="start">
+        <img src="https://www.svgrepo.com/show/492970/male-lawyer-upper-body.svg"/>
+      </ion-avatar>
+      <ion-label>
+        <h1>Dhimar Fadhilansyah</h1>
+          <p>Gathered: <span class="money">$ 66,00</span></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <app-pickup-call-card status="hold" updatedAt="20/08/2024 16:00" createdAt="01/08/20204"
+  notes="we have two bags that are full, one with plastic and the other wih glasses">
+    <ion-card-header header>
+      <ion-card-subtitle>Last pickup call</ion-card-subtitle>
+    </ion-card-header>
+    <ion-button color="success" fill="clear" size="full" footer (click)="goToPickupCalls()">See all...</ion-button>
+  </app-pickup-call-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="success" (click)="newPickupCall()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
