@@ -8,8 +8,9 @@
 
         <ion-card-content>
           <ion-item>
-            <ion-label position="floating">Email</ion-label>
-            <ion-input type="email" formControlName="email"></ion-input>
+            <ion-input label="Email" labelPlacement="floating" placeholder="Enter text" type="email"
+              formControlName="email">
+            </ion-input>
           </ion-item>
 
           <div *ngIf="form.get('email')?.invalid && (form.get('email')?.touched || form.get('email')?.dirty)"

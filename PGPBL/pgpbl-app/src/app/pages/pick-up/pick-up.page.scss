@@ -1,3 +1,9 @@
 ion-button {
     margin: 15px;
 }
+
+img{
+  padding: 16px; /* Atur sesuai kebutuhan */
+  display: block; /* Memastikan gambar tidak memiliki margin otomatis di bawahnya */
+  margin: 0 auto; /* Memastikan gambar berada di tengah */
+}
