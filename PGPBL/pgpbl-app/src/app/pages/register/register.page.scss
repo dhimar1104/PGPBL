@@ -1,7 +1,36 @@
-ion-content {
-    background: green;
+// ion-content {
+//     background: green;
+// }
+
+// ion-button {
+//     margin: 10px;
+// }
+
+ion-button[color="dark"]{
+  text-transform: initial;
 }
 
-ion-button {
-    margin: 10px;
+ion-content{
+  background: green; //pengaturan warna background
+}
+
+ion-button{
+  margin:10px;
+}
+
+input.ng-invalid.ng-touched {
+  border-bottom: 2px solid red;
+}
+
+input.ng-valid.ng-touched {
+  border-bottom: 2px solid green;
+}
+
+/* Add these styles to handle input border color */
+ion-item ion-input.ng-invalid.ng-touched {
+  border-bottom: 2px solid red;
+}
+
+ion-item ion-input.ng-valid.ng-touched {
+  border-bottom: 2px solid rgb(82, 183, 82);
 }

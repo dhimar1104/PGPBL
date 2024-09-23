@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http'; // Tambahkan ini
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
@@ -12,13 +13,16 @@ import { LoadingComponent } from './components/loading/loading.component';
 import { environment } from 'src/environments/environment.prod';
 import { AngularFireModule } from '@angular/fire/compat';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     LoadingComponent
   ],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    HttpClientModule, // Tambahkan di sini
     AngularFireModule.initializeApp(environment.firebaseConfig),
     ...AppStoreModule,
     StoreDevtoolsModule.instrument({ maxAge: 25 })
